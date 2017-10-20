@@ -1,3 +1,3 @@
-from actor import act
+import vLogin
 
-act.doIt()
+vLogin.action()

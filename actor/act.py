@@ -4,7 +4,7 @@ from vLogin import GitHub_spider
 
 def getCall(id):
     def theCall(re):
-        re['id']=id
+        re['key_word_id']=id
         data_source.insert_request(re)
         print(re)
     return theCall

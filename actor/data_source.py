@@ -25,7 +25,7 @@ def get_all_key():
 
 def insert_request(re):
     insert = zySQL.queries.insert("spider_re",
-                                  id="id",
+                                  # id="id",
                                   star_num="star_num",
                                   fork_num="fork_num",
                                   watch_num="watch_num",
@@ -35,7 +35,11 @@ def insert_request(re):
                                   key_word_id="key_word_id",
                                   description="description",
                                   )
-    insert.do(re)
+    try:
+        insert.do(re)
+    except Exception as e:
+        print(e)
+
 
 
 if __name__ == "__main__":
