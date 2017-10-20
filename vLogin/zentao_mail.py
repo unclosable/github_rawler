@@ -5,7 +5,7 @@ from email.header import Header
 
 __sender = "冯涛 <fengtao@itiaoling.com>"
 __receiver = ["zhengwei@itiaoling.com", "fengtao@itiaoling.com",
-              "liuhaibao@itiaoling.com", "songkai@itiaoling.com",
+              "liuhaibao@itiaoling.com", "songkai@itiaoling.com","wanglida@itiaoling.com",
               "gaotong@itiaoling.com", "wujianwei@itiaoling.com"]
 __subject = '涛涛你好二你皂么'
 __smtpserver = 'smtp.wltest.com'
