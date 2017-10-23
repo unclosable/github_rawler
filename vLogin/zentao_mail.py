@@ -13,7 +13,7 @@ _receiver_detail = {
     "宋凯": "songkai@itiaoling.com",
     "王丽达": "wanglida@itiaoling.com",
     "高彤": "gaotong@itiaoling.com",
-    "吴建伟": "wujianwei@itiaoling.com",
+    "吴建伟": "wujianweia@itiaoling.com",
 }
 __testReceiver = ["zhengwei@itiaoling.com"]
 __subject = '涛涛你好二你皂么'
