@@ -1,3 +1,0 @@
-import vLogin
-
-vLogin.action()

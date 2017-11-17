@@ -6,47 +6,24 @@ def report_worksummary(content):
     table = soup.find("table", attrs={
         "id": "worksummary"
     })
-    # soup.strip()
     re = {}
-    last = None
-    lastName = None
     for tr in table.find('tbody').findAll('tr'):
         nameTR = tr.find('td', attrs={
             "class": "w-user"
         })
         if nameTR:
-            if last:
-                re[lastName] = last
-            lastName = nameTR.text
-            last = []
-
-        tds = tr.findAll('td')
-        if nameTR:
-            last.append({
-                "workName": tds[2].text,
-                "workID": tds[1].text,
-                "expectedTime": tds[9].text,
-                "usedTime": tds[10].text
-            })
-        else:
-            last.append({
-                "workName": tds[1].text,
-                "workID": tds[0].text,
-                "expectedTime": tds[8].text,
-                "usedTime": tds[9].text
-            })
-
-
-
-        # tds = tr.findAll('td')
-        # if tds[0].text:
-        #     if last:
-        #         re[last[0]] = last[1]
-        #     last = (tds[0].text, [])
-        # last[1].append({
-        #     "workName": tds[2].text,
-        #     "workID": tds[1].text,
-        #     "expectedTime": tds[9].text,
-        #     "usedTime": tds[10].text
-        # })
+            name = nameTR.text
+            tds = tr.findAll('td')[1:]
+            i = 0
+            jobs = []
+            while i < len(tds):
+                job = tds[i:i + 11]
+                jobs.append({
+                    "workName": job[1].text,
+                    "workID": job[0].text,
+                    "expectedTime": job[8].text,
+                    "usedTime": job[9].text
+                })
+                i += 11
+            re[name] = jobs
     return re
