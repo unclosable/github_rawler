@@ -57,7 +57,7 @@ def action_lastWeek():
 
 def action_thisMonth():
     cookie = login("songkai", "4a28484c16b6ae56a24308b43c007339")
-    query_page_url = get_search_url_report_worksummary_last_week()
+    query_page_url = get_search_url_report_worksummary_this_month()
     query_page = requests.get(query_page_url, cookies=cookie)
     rw = report_worksummary(query_page.content)
     title = "本月工作报表"
