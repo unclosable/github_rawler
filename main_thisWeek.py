@@ -1,3 +1,3 @@
 import vLogin
 
-vLogin.action_thisWeek()
+vLogin.action_thisWeek_whitMaster()

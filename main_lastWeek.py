@@ -1,3 +1,3 @@
 import vLogin
 
-vLogin.action_lastWeek()
+vLogin.action_lastWeek_withMaster()

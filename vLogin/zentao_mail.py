@@ -15,6 +15,32 @@ _receiver_detail = {
     "高彤": "gaotong@itiaoling.com",
     "吴建伟": "wujianweia@itiaoling.com"
 }
+
+_receivers = [{
+    "name": "刘海宝",
+    "email": "liuhaibao@itiaoling.com",
+    # "email": "zhengwei@itiaoling.com",
+    "subordinate": [{
+        "name": "郑巍",
+        "email": "zhengwei@itiaoling.com"
+    }, {
+        "name": "冯涛",
+        "email": "fengtao@itiaoling.com"
+    }, {
+        "name": "宋凯",
+        "email": "songkai@itiaoling.com"
+    }, {
+        "name": "王丽达",
+        "email": "wanglida@itiaoling.com"
+    }, {
+        "name": "高彤",
+        "email": "gaotong@itiaoling.com"
+    }, {
+        "name": "吴建伟",
+        "email": "wujianweia@itiaoling.com"
+    }]
+}]
+
 __testReceiver = ["zhengwei@itiaoling.com"]
 __subject = '涛涛你好二你皂么'
 __smtpserver = 'smtp.wltest.com'
